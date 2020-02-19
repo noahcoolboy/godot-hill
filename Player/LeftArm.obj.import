@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/LeftArm.obj-ae53bf210d409ac299c7bad4e9bde5fc.mesh"
+
+[deps]
+
+files=[ "res://.import/LeftArm.obj-ae53bf210d409ac299c7bad4e9bde5fc.mesh" ]
+
+source_file="res://Player/LeftArm.obj"
+dest_files=[ "res://.import/LeftArm.obj-ae53bf210d409ac299c7bad4e9bde5fc.mesh", "res://.import/LeftArm.obj-ae53bf210d409ac299c7bad4e9bde5fc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

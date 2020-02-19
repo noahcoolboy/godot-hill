@@ -1,0 +1,94 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "BRKParser",
+"language": "GDScript",
+"path": "res://Scripts/BRKParser.gd"
+}, {
+"base": "Node",
+"class": "NetworkManager",
+"language": "GDScript",
+"path": "res://Scripts/NetworkManager.gd"
+}, {
+"base": "Node",
+"class": "PacketHandler",
+"language": "GDScript",
+"path": "res://Scripts/PacketHandler.gd"
+}, {
+"base": "Object",
+"class": "SmartBufferReader",
+"language": "GDScript",
+"path": "res://Scripts/SmartBuffer.gd"
+}, {
+"base": "StreamPeerBuffer",
+"class": "SuperBuffer",
+"language": "GDScript",
+"path": "res://Scripts/SuperBuffer.gd"
+} ]
+_global_script_class_icons={
+"BRKParser": "",
+"NetworkManager": "",
+"PacketHandler": "",
+"SmartBufferReader": "",
+"SuperBuffer": ""
+}
+
+[application]
+
+config/name="brick hill"
+run/main_scene="res://Spatial.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://Scenes/Node.tscn"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "orbit_camera" )
+
+[input]
+
+move_forward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+move_back={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+strafe_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+strafe_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[locale]
+
+locale_filter=[ 0, [ "en_US" ] ]
+
+[rendering]
+
+limits/rendering/max_renderable_elements=1000000
+environment/default_environment="res://default_env.tres"

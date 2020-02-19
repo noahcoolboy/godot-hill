@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/PantsTorso.obj-eaa5481156bfbc91155ad1109aadfe38.mesh"
+
+[deps]
+
+files=[ "res://.import/PantsTorso.obj-eaa5481156bfbc91155ad1109aadfe38.mesh" ]
+
+source_file="res://Player/PantsTorso.obj"
+dest_files=[ "res://.import/PantsTorso.obj-eaa5481156bfbc91155ad1109aadfe38.mesh", "res://.import/PantsTorso.obj-eaa5481156bfbc91155ad1109aadfe38.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
